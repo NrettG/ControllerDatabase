@@ -121,15 +121,5 @@
         "native_consoles": ["ps4", "ps5", "nsw", "ps3"],
         "macro": false,
         "turbo": false
-    },
-    "variants": [
-        {
-            "name": "Regular Layout",
-            "image": "image.png"
-        },
-        {
-            "name": "Mirrored",
-            "image": "mirror.png"
-        }
-    ]
+    }
 }

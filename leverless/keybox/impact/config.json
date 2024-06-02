@@ -1,31 +1,31 @@
 {
-    "name": "8BitDo Lite",
+    "name": "Keybox Impact",
     "functions": {
         "analog_sticks": null,
         "digital_sticks": null,
         "action_buttons": [
             {
-                "name": "A",
+                "name": "Triangle",
                 "analog": false
             },
             {
-                "name": "B",
+                "name": "Circle",
                 "analog": false
             },
             {
-                "name": "X",
+                "name": "Square",
                 "analog": false
             },
             {
-                "name": "Y",
+                "name": "Cross",
                 "analog": false
             },
             {
-                "name": "L",
+                "name": "L1",
                 "analog": false
             },
             {
-                "name": "R",
+                "name": "R1",
                 "analog": false
             },
             {
@@ -46,54 +46,37 @@
             }
         ],
         "menu_buttons": [
-            "-",
-            "+"
+            "Options"
         ],
         "system_buttons": [
-            "Star",
-            "Home"
+            "Share"
         ],
-        "other_buttons": [
-            "Sync",
-            "Mode Switch"
-        ],
+        "other_buttons": null,
         "trackpads": null,
         "touch_screens": null,
         "directional_buttons": [
             {
                 "set": [
-                    "Left Stick Up",
-                    "Left Stick Down",
-                    "Left Stick Left",
-                    "Left Stick Right"
-                ],
-                "socd_prevention": {
-                    "hardware": true,
-                    "software": null
-                }
-            },
-            {
-                "set": [
-                    "Right Stick Up",
-                    "Right Stick Down",
-                    "Right Stick Left",
-                    "Right Stick Right"
-                ],
-                "socd_prevention": {
-                    "hardware": true,
-                    "software": null
-                }
-            },
-            {
-                "set": [
-                    "D-Pad Up",
-                    "D-Pad Down",
-                    "D-Pad Left",
-                    "D-Pad Right"
+                    "Up",
+                    "Down",
+                    "Left",
+                    "Right"
                 ],
                 "socd_prevention": {
                     "hardware": false,
-                    "software": null
+                    "software": {
+                        "left_right": [
+                            "neutral",
+                            "last_input",
+                            "disable"
+                        ],
+                        "up_down": [
+                            "neutral",
+                            "up",
+                            "last_input",
+                            "disable"
+                        ]
+                    }
                 }
             }
         ],
@@ -108,7 +91,7 @@
             "interface": "USB-C",
             "removable": true
         },
-        "bluetooth": true,
+        "bluetooth": false,
         "2_4ghz": false,
         "rumble": null,
         "digital_to_analog_conversion": [
@@ -121,15 +104,22 @@
                 "emulated_analog": "Right Stick",
                 "type": "8_way",
                 "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "L2",
+                "type": "button",
+                "modifier_buttons": 0
+            },
+            {
+                "emulated_analog": "R2",
+                "type": "button",
+                "modifier_buttons": 0
             }
         ],
-        "pc_xinput": true,
+        "pc_xinput": false,
         "pc_steaminput": true,
-        "native_consoles": [
-            "nsw"
-        ],
+        "native_consoles": ["ps4", "ps5", "nsw", "ps3"],
         "macro": false,
-        "turbo": true
-    },
-    "source": "https://download.8bitdo.com/Manual/Controller/Lite/Lite_Manual.pdf"
+        "turbo": false
+    }
 }
